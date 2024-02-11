@@ -18,6 +18,11 @@ img {
 
 ul {
   list-style: none;
+  
+  li {
+    margin: 0 $xsmall-size;
+    display: inline;
+  }
 }
 
 body {
@@ -29,8 +34,12 @@ a {
   color: inherit;
 }
 
-h3 {
+h2 {
   font-size: 1rem;
+}
+
+i {
+  font-size: 1.3rem;
 }
 
 // UTILS PROPS
@@ -43,6 +52,6 @@ h3 {
   margin: 0 auto;
   padding: 0 $small-size;
   max-width: 1180px;
-  border-left: 2px dashed green;
-  border-right: 2px dashed green;
+  justify-content: space-between;
+  align-items: center;
 }

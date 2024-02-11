@@ -67,27 +67,15 @@
 
 header {
   background-color: $topbar-color;
-  padding: 5px 0;
+  padding: $xsmall-size 0;
   color: white;
-  .container {
-    justify-content: space-between;
-    align-items: center;
-  }
 
   ul {
     margin: 20px 0;
     
-    li {
-      margin: 0 $xsmall-size;
-      
-      &.active {
-        background-color: rgb(165, 190, 194);
-      }
-    }
-    
   }
   .logo {
-    height: 40px;
+    height: 30px;
   }
 }
 </style>

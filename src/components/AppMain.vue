@@ -32,7 +32,7 @@
             <!-- Caption -->
             <div class="wrapper-caption">
               <small>Levi's</small>
-              <h3>RELAXED FIT TEE UNISEX</h3>
+              <h2>RELAXED FIT TEE UNISEX</h2>
               <small class="discounted">14,99 €</small>
               <small class="full">29,99 €</small>
             </div>
