@@ -2,6 +2,34 @@
   export default {
     data() {
       return {
+        links: [
+          {
+            text: 'Donna',
+            url: '#'
+          },
+          {
+            text: 'Uomo',
+            url: '#'
+          },
+          {
+            text: 'Bambini',
+            url: '#'
+          }
+        ],
+        icons: [
+          {
+            snippet: 'fa-regular fa-user',
+            url: '#'
+          },
+          {
+            snippet: 'fa-regular fa-heart',
+            url: '#'
+          },
+          {
+            snippet: 'fa-solid fa-bag-shopping',
+            url: '#'
+          },
+        ]
       }
     }
   };
@@ -10,53 +38,38 @@
 <template>
   <header>
     <div class="container d-flex">
+
+      <!-- Nav sx -->
       <nav>
         <ul class="d-flex">
-          <li>
+
+          <li v-for="link in links">
             <h3>
-              <a href="#">
-                Donna
+              <a :href="link.url">
+                {{ link.text }}
               </a>
             </h3>
           </li>
-          <li>
-            <h3>
-              <a href="#">
-                Uomo
-              </a>
-            </h3>
-          </li>
-          <li>
-            <h3>
-              <a href="#">
-                Bambini
-              </a>
-            </h3>
-          </li>
+          
         </ul>
       </nav>
+
+      <!-- Logo Boolean -->
       <h1>
         <a href="">
          <img src="/img/boolean-logo.png" alt="logo boolando" class="logo">
         </a>
       </h1>
 
+      <!-- List icon dx -->
       <ul class="list-icons d-flex">
-        <li>
-          <a href="#">
-            <i class="fa-regular fa-user"></i>
+        
+        <li v-for="icon in icons">
+          <a :href="icon.url">
+            <i :class="icon.snippet"></i>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa-regular fa-heart"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-bag-shopping"></i>
-          </a>
-        </li>
+        
       </ul>
     </div>
   </header>
