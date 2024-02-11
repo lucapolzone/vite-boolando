@@ -4,6 +4,12 @@
   export default {
     data() {
       return {
+        discountBadge: '-50%',
+        ecoBadge: 'Sostenibilità',
+        brand: "Levi's",
+        modelItem: 'RELAXED FIT TEE UNISEX',
+        discountedPrice: '14,99 €',
+        fullPrice: '29,99 €'
       }
     },
 
@@ -19,7 +25,15 @@
         <div class="col">
           
           <!-- Componente AppCard -->
-          <app-card></app-card>
+          <app-card 
+            :discountbadge="discountBadge"
+            :ecobadge="ecoBadge"
+            :brand="brand"
+            :model="modelItem"
+            :discountedprice="discountedPrice"
+            :fullprice="fullPrice"
+          >
+          </app-card>
         </div> 
 
         <div class="col">

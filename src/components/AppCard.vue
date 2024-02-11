@@ -3,8 +3,18 @@
     data() {
       return {
       }
+    },
+
+    props: {
+      discountbadge: String,
+      ecobadge: String,
+      brand: String,
+      model: String,
+      discountedprice: String,
+      fullprice: String,
     }
-  };
+  }
+
 </script>
 <template>
 
@@ -16,8 +26,8 @@
       
       <!-- Badges -->
       <div class="badge-container d-flex">
-        <div class="discount badge">-50%</div>
-        <div class="eco badge">Sostenibilità</div>
+        <div class="discount badge">{{ discountbadge }}</div>
+        <div class="eco badge">{{ ecobadge }}</div>
       </div>
       
       <!-- Model photo -->
@@ -27,10 +37,10 @@
 
     <!-- Caption -->
     <div class="wrapper-caption">
-      <small>Levi's</small>
-      <h2>RELAXED FIT TEE UNISEX</h2>
-      <small class="discounted">14,99 €</small>
-      <small class="full">29,99 €</small>
+      <small>{{ brand }}</small>
+      <h2>{{ model }}</h2>
+      <small class="discounted">{{ discountedprice }}</small>
+      <small class="full">{{ fullprice }}</small>
     </div>
   </div>
 
