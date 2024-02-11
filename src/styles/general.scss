@@ -1,6 +1,6 @@
 @use './partials/_variables.scss' as *;
 @use './partials/_mixins.scss' as *;
-
+@use './partials/_mixins.scss' as *;
 
 // RESET
 
@@ -52,6 +52,5 @@ i {
   margin: 0 auto;
   padding: 0 $small-size;
   max-width: 1180px;
-  justify-content: space-between;
-  align-items: center;
+  @include between-align-center;
 }
