@@ -18,4 +18,131 @@ PS. nel file che vi ho mandato non c'è tutto: ad esempio non c'è scritto come 
 
 Volendo esagerare, so di una classe i cui studenti hanno collaborato condividendo un file su Google Drive e prendendo appunti condivisi (basta che non vi distraiate troppo durante le spiegazioni).
 
-Buon lavoro!
+Buon lavoro! <br><br>
+
+# (09/02/2024)
+stessa nome repo
+
+## Descrizione
+Continuate a lavorare nella stessa repo di ieri.
+
+## Milestone 1
+Create un componente `Card` predisposto per ricevere dall'esterno le informazioni necessarie alla visualizzazione dei propri elementi (con le `props`).
+Potete testarlo stampando una singola `Card` con informazioni statiche.
+
+## Milestone 2
+(Se non lo avete già fatto) definite un array di prodotti nel componente `AppMain`. Potete prendere spunto dall'array allegato o usarlo direttamente così com'è. Iterate sull'array di prodotti e per ognuno di essi create un componente `Card`, inviando le informazioni necessarie alla visualizzazione.
+
+## Bonus
+Facciamo in modo che il cuore nella `Card` del prodotto sia colorato o vuoto a seconda del valore della proprietà `isInFavourites`
+
+## Bonus 2
+Spostate i menu dinamici dai componenti `AppHeader` e `AppFooter` al componente App. Inviateglieli poi tramite `props`.
+
+
+```
+[
+  {
+    id: 1,
+    frontImage: '1.webp',
+    backImage: '1b.webp',
+    brand: "Levi's",
+    name: 'Relaxed Fit',
+    price: 29.99,
+    isInFavorites: true,
+    badges: [
+      {
+        type: 'tag',
+        value: 'Sostenibilità',
+      },
+      {
+        type: 'discount',
+        value: '-50%',
+      },
+    ],
+  },
+  {
+    id: 2,
+    frontImage: '2.webp',
+    backImage: '2b.webp',
+    brand: 'Guess',
+    name: 'Roses Tee',
+    price: 20.99,
+    isInFavorites: true,
+    badges: [
+      {
+        type: 'discount',
+        value: '-30%',
+      },
+    ],
+  },
+  {
+    id: 3,
+    frontImage: '3.webp',
+    backImage: '3b.webp',
+    brand: 'Come Zucchero Filato',
+    name: 'Voglia di colori pastello',
+    price: 129.99,
+    isInFavorites: false,
+    badges: [
+      {
+        type: 'discount',
+        value: '-30%',
+      },
+    ],
+  },
+  {
+    id: 4,
+    frontImage: '4.webp',
+    backImage: '4b.webp',
+    brand: "Levi's",
+    name: 'Tee Unisex',
+    price: 14.99,
+    isInFavorites: false,
+    badges: [
+      {
+        type: 'tag',
+        value: 'Sostenibilità',
+      },
+      {
+        type: 'discount',
+        value: '-50%',
+      },
+    ],
+  },
+  {
+    id: 5,
+    frontImage: '5.webp',
+    backImage: '5b.webp',
+    brand: 'Maya Deluxe',
+    name: 'Stripe Bodice',
+    price: 99.99,
+    isInFavorites: true,
+    badges: [
+      {
+        type: 'tag',
+        value: 'Sostenibilità',
+      },
+      {
+        type: 'discount',
+        value: '-50%',
+      },
+    ],
+  },
+  {
+    id: 6,
+    frontImage: '6.webp',
+    backImage: '6b.webp',
+    brand: 'Esprit',
+    name: 'Maglione - Black',
+    price: 29.99,
+    isInFavorites: true,
+    badges: [
+      {
+        type: 'tag',
+        value: 'Sostenibilità',
+      },
+    ],
+  },
+];
+```
