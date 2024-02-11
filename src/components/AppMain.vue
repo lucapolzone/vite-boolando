@@ -37,7 +37,7 @@
               <small class="full">29,99 €</small>
             </div>
           </div>
-        </div>
+        </div> 
 
         <div class="col">
           <div class="card">
