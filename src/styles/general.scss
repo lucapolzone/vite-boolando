@@ -10,6 +10,12 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
+
 ul {
   list-style: none;
 }
@@ -23,6 +29,9 @@ a {
   color: inherit;
 }
 
+h3 {
+  font-size: 1rem;
+}
 
 // UTILS PROPS
 
@@ -32,6 +41,8 @@ a {
 
 .container {
   margin: 0 auto;
+  padding: 0 $small-size;
   max-width: 1180px;
-  border: 2px dashed green;
+  border-left: 2px dashed green;
+  border-right: 2px dashed green;
 }

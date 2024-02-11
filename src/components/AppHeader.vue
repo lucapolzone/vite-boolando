@@ -12,23 +12,50 @@
     <div class="container d-flex">
       <nav>
         <ul class="d-flex">
-          <li>Donne</li>
-          <li>Uomo</li>
-          <li>Bambini</li>
+          <li>
+            <h3>
+              <a href="#">
+                Donna
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="#">
+                Uomo
+              </a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="#">
+                Bambini
+              </a>
+            </h3>
+          </li>
         </ul>
       </nav>
-
-      <img src="/img/boolean-logo.png" alt="" class="logo">
+      <h1>
+        <a href="">
+         <img src="/img/boolean-logo.png" alt="logo boolando" class="logo">
+        </a>
+      </h1>
 
       <ul class="list-icons d-flex">
         <li>
-          <i class="fa-regular fa-user"></i>
+          <a href="#">
+            <i class="fa-regular fa-user"></i>
+          </a>
         </li>
         <li>
-          <i class="fa-regular fa-heart"></i>
+          <a href="#">
+            <i class="fa-regular fa-heart"></i>
+          </a>
         </li>
         <li>
-          <i class="fa-solid fa-bag-shopping"></i>
+          <a href="#">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </a>
         </li>
       </ul>
     </div>
