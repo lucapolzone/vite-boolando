@@ -6,41 +6,46 @@
     },
 
     props: {
-      discountbadge: String,
-      ecobadge: String,
+      id: Number,
+      frontimage: String,
+      backimage: String,
       brand: String,
       model: String,
       discountedprice: String,
       fullprice: String,
+      discountbadge: String,
+      ecobadge: String
     }
   }
 
 </script>
 <template>
 
-  <div class="card">
-    <div class="wrapper-photo">
-      <!-- Box favorite item -->
-      <div class="favorite-item">
+  <div class="col">
+    <div class="card">
+      <div class="wrapper-photo">
+        <!-- Box favorite item -->
+        <div class="favorite-item">
+        </div>
+        
+        <!-- Badges -->
+        <div class="badge-container d-flex">
+          <div class="discount badge">{{ discountbadge }}</div>
+          <div class="eco badge">{{ ecobadge }}</div>
+        </div>
+        
+        <!-- Model photo -->
+        <img :src="`/img/${frontimage}`" :alt="`img-${id}`" class="default-image">
+        <img :src="`/img/${backimage}`" :alt="`img-${id}b`" class="total-frame-image">
       </div>
-      
-      <!-- Badges -->
-      <div class="badge-container d-flex">
-        <div class="discount badge">{{ discountbadge }}</div>
-        <div class="eco badge">{{ ecobadge }}</div>
-      </div>
-      
-      <!-- Model photo -->
-      <img src="/img/1.webp" alt="" class="default-image">
-      <img src="/img/1b.webp" alt="" class="total-frame-image">
-    </div>
 
-    <!-- Caption -->
-    <div class="wrapper-caption">
-      <small>{{ brand }}</small>
-      <h2>{{ model }}</h2>
-      <small class="discounted">{{ discountedprice }}</small>
-      <small class="full">{{ fullprice }}</small>
+      <!-- Caption -->
+      <div class="wrapper-caption">
+        <small>{{ brand }}</small>
+        <h2>{{ model.toUpperCase() }}</h2>
+        <small class="discounted">{{ discountedprice }}</small>
+        <small class="full">{{ fullprice }}</small>
+      </div>
     </div>
   </div>
 
@@ -49,7 +54,14 @@
 
 <style lang="scss" scoped>
   @use '../styles/partials/_variables.scss' as *;
-      .card {
+      
+  .col {
+      padding: $small-size;
+      width: calc(100% / 3);
+
+    }
+  
+  .card {
         padding: $small-size;
         border: 2px solid rgb(236, 236, 236);
 

@@ -4,12 +4,15 @@
   export default {
     data() {
       return {
+        id: 1,
+        frontImage: '1.webp',
+        backImage: '1b.webp',
+        brand: "Levi's",
+        modelItem: 'Relaxed fit tee unisex',
+        discountedPrice: '14,99 €',
+        fullPrice: '29,99 €',
         discountBadge: '-50%',
         ecoBadge: 'Sostenibilità',
-        brand: "Levi's",
-        modelItem: 'RELAXED FIT TEE UNISEX',
-        discountedPrice: '14,99 €',
-        fullPrice: '29,99 €'
       }
     },
 
@@ -22,19 +25,20 @@
   <main>
     <div class="container">
       <div class="row d-flex">
-        <div class="col">
           
           <!-- Componente AppCard -->
-          <app-card 
-            :discountbadge="discountBadge"
-            :ecobadge="ecoBadge"
+          <app-card
+            :id="id" 
+            :frontimage="frontImage"
+            :backimage="backImage" 
             :brand="brand"
             :model="modelItem"
             :discountedprice="discountedPrice"
             :fullprice="fullPrice"
+            :discountbadge="discountBadge"
+            :ecobadge="ecoBadge"
           >
           </app-card>
-        </div> 
 
         <div class="col">
           <div class="card">
@@ -70,12 +74,6 @@
   .row {
     margin: 0 calc($small-size * -1);
     flex-wrap: wrap;
-  
-    .col {
-      padding: $small-size;
-      width: calc(100% / 3);
-
-    }
   }
   
 
