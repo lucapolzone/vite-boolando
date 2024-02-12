@@ -34,9 +34,9 @@
       <!-- Caption -->
       <div class="wrapper-caption">
         <small>{{ card.brand }}</small>
-        <h2>{{ card.modelItem.toUpperCase() }}</h2>
+        <h2>{{ card.name.toUpperCase() }}</h2>
         <small class="discounted">{{ card.discountedPrice }}</small>
-        <small class="full">{{ card.fullPrice }}</small>
+        <small class="full">{{ card.price }}</small>
       </div>
     </div>
   </div>
@@ -57,7 +57,6 @@
   
   .card {
         padding: $small-size;
-        border: 2px solid rgb(236, 236, 236);
 
         .wrapper-photo {
           position: relative;

@@ -10,9 +10,9 @@
             frontImage: '1.webp',
             backImage: '1b.webp',
             brand: "Levi's",
-            modelItem: 'Relaxed fit tee unisex',
+            name: 'Relaxed fit tee unisex',
             discountedPrice: '14,99 €',
-            fullPrice: '29,99 €',
+            price: '29,99 €',
             badges: [
               {
                 type: 'tag',
@@ -29,9 +29,9 @@
             frontImage: '2.webp',
             backImage: '2b.webp',
             brand: 'Guess',
-            modelItem: 'Relaxed fit tee unisex',
+            name: 'Roses tee',
             discountedPrice: '20,99 €',
-            fullPrice: '29,99 €',
+            price: '29,99 €',
             badges: [
               {
                 type: 'discount',
@@ -44,9 +44,9 @@
             frontImage: '3.webp',
             backImage: '3b.webp',
             brand: "Come Zucchero filato",
-            modelItem: 'Voglia di colori pastello',
+            name: 'Voglia di colori pastello',
             discountedPrice: '129,99 €',
-            fullPrice: '184,99 €',
+            price: '184,99 €',
             badges: [
               {
                 type: 'discount',
@@ -59,9 +59,9 @@
             frontImage: '4.webp',
             backImage: '4b.webp',
             brand: "Levi's",
-            modelItem: 'Tee unisex',
+            name: 'Tee unisex',
             discountedPrice: '14,99 €',
-            fullPrice: '29,99 €',
+            price: '29,99 €',
             badges: [
               {
                 type: 'tag',
@@ -78,7 +78,7 @@
             frontImage: '5.webp',
             backImage: '5b.webp',
             brand: "Maya Deluxe",
-            modelItem: 'Stripe Bodice',
+            name: 'Stripe Bodice',
             discountedPrice: '99,99 €',
             badges: []
           },
@@ -87,7 +87,7 @@
             frontImage: '6.webp',
             backImage: '6b.webp',
             brand: "Esprit",
-            modelItem: 'Maglione - black',
+            name: 'Maglione - black',
             discountedPrice: '29,99 €',
             badges: [
               {
