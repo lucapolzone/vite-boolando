@@ -2,10 +2,13 @@
  export default {
     data() {
       return {
+        newindex: 0,
       }
     },
 
     props: {
+      cards: Array,
+      index: Number,
       id: Number,
       frontimage: String,
       backimage: String,
@@ -21,7 +24,7 @@
 </script>
 <template>
 
-  <div class="col">
+  <div v-for="card in cards" class="col">
     <div class="card">
       <div class="wrapper-photo">
         <!-- Box favorite item -->
@@ -42,7 +45,7 @@
       <!-- Caption -->
       <div class="wrapper-caption">
         <small>{{ brand }}</small>
-        <h2>{{ model.toUpperCase() }}</h2>
+        <h2>{{ model }}</h2>
         <small class="discounted">{{ discountedprice }}</small>
         <small class="full">{{ fullprice }}</small>
       </div>

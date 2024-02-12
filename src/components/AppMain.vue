@@ -4,15 +4,53 @@
   export default {
     data() {
       return {
-        id: 1,
-        frontImage: '1.webp',
-        backImage: '1b.webp',
-        brand: "Levi's",
-        modelItem: 'Relaxed fit tee unisex',
-        discountedPrice: '14,99 €',
-        fullPrice: '29,99 €',
-        discountBadge: '-50%',
-        ecoBadge: 'Sostenibilità',
+        index: 0,
+        cards: [ 
+          {
+            id: 1,
+            frontImage: '1.webp',
+            backImage: '1b.webp',
+            brand: "Levi's",
+            modelItem: 'Relaxed fit tee unisex',
+            discountedPrice: '14,99 €',
+            fullPrice: '29,99 €',
+            discountBadge: '-50%',
+            ecoBadge: 'Sostenibilità',
+          },
+          {
+            id: 2,
+            frontImage: '2.webp',
+            backImage: '2b.webp',
+            brand: "Levi's",
+            modelItem: 'Relaxed fit tee unisex',
+            discountedPrice: '14,99 €',
+            fullPrice: '29,99 €',
+            discountBadge: '-50%',
+            ecoBadge: 'Sostenibilità',
+          },
+          {
+            id: 3,
+            frontImage: '3.webp',
+            backImage: '3b.webp',
+            brand: "Levi's",
+            modelItem: 'Relaxed fit tee unisex',
+            discountedPrice: '14,99 €',
+            fullPrice: '29,99 €',
+            discountBadge: '-50%',
+            ecoBadge: 'Sostenibilità',
+          },
+          {
+            id: 4,
+            frontImage: '4.webp',
+            backImage: '4b.webp',
+            brand: "Levi's",
+            modelItem: 'Relaxed fit tee unisex',
+            discountedPrice: '14,99 €',
+            fullPrice: '29,99 €',
+            discountBadge: '-50%',
+            ecoBadge: 'Sostenibilità',
+          }
+        ] 
       }
     },
 
@@ -28,35 +66,21 @@
           
           <!-- Componente AppCard -->
           <app-card
-            :id="id" 
-            :frontimage="frontImage"
-            :backimage="backImage" 
-            :brand="brand"
-            :model="modelItem"
-            :discountedprice="discountedPrice"
-            :fullprice="fullPrice"
-            :discountbadge="discountBadge"
-            :ecobadge="ecoBadge"
+            :cards= "cards"
+            :index="index"
+            :id="cards[index].id" 
+            :frontimage="cards[index].frontImage"
+            :backimage="cards[index].backImage" 
+            :brand="cards[index].brand"
+            :model="cards[index].modelItem"
+            :discountedprice="cards[index].discountedPrice"
+            :fullprice="cards[index].fullPrice"
+            :discountbadge="cards[index].discountBadge"
+            :ecobadge="cards[index].ecoBadge"
           >
           </app-card>
 
-        <div class="col">
-          <div class="card">
-            card-content
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            card-content
-          </div>
-        </div>
-
-        <div class="col">
-          <div class="card">
-            card-content
-          </div>
-        </div>
+        
 
       </div>
     </div>
