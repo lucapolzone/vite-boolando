@@ -29,8 +29,8 @@
         </div>
         
         <!-- Model photo -->
-        <img :src="`/img/${card.frontImage}`" :alt="`img-${id}`" class="default-image">
-        <img :src="`/img/${card.backImage}`" :alt="`img-${id}b`" class="total-frame-image">
+        <img :src="`/img/${card.frontImage}`" :alt="`img-${card.id}`" class="default-image">
+        <img :src="`/img/${card.backImage}`" :alt="`img-${card.id}b`" class="total-frame-image">
       </div>
 
       <!-- Caption -->
