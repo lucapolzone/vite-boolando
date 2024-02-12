@@ -50,15 +50,15 @@
   @use '../styles/partials/_variables.scss' as *;
       
   .col {
-      padding: $small-size;
+      padding: $small-size 0;
       width: calc(100% / 3);
-
     }
 
 
   
   .card {
         padding: $small-size;
+        
 
         .wrapper-photo {
           position: relative;

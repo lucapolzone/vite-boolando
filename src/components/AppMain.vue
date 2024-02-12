@@ -117,7 +117,7 @@
       <div class="row d-flex">
           
           <!-- Componente AppCard -->
-          <app-card
+          <app-card 
             :cards= "cards"
           >
           </app-card>
