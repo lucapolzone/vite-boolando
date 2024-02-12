@@ -2,7 +2,6 @@
  export default {
     data() {
       return {
-        newindex: 0,
       }
     },
 
@@ -22,9 +21,9 @@
         </div>
         
         <!-- Badges -->
-        <div class="badge-container d-flex">
-          <div class="discount badge">{{ card.discountBadge }}</div>
-          <div class="eco badge">{{ card.ecoBadge }}</div>
+        <div v-for="badge in badges" class="badge-container d-flex">
+          <div class="discount badge" v-if="badge.type == 'tag' ? badge.value : ''">{{ badge.value }}</div>
+          <div class="eco badge" v-if="badge.type == 'discount' ? badge.value : ''">{{ badge.value }}</div>
         </div>
         
         <!-- Model photo -->

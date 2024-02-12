@@ -13,8 +13,16 @@
             modelItem: 'Relaxed fit tee unisex',
             discountedPrice: '14,99 €',
             fullPrice: '29,99 €',
-            discountBadge: '-50%',
-            ecoBadge: 'Sostenibilità',
+            badges: [
+              {
+                type: 'tag',
+                value: 'Sostenibilità'
+              },
+              {
+                type: 'discount',
+                value: '-50%'
+              }
+            ]
           },
           {
             id: 2,
@@ -24,8 +32,12 @@
             modelItem: 'Relaxed fit tee unisex',
             discountedPrice: '20,99 €',
             fullPrice: '29,99 €',
-            discountBadge: '-50%',
-            ecoBadge: false,
+            badges: [
+              {
+                type: 'discount',
+                value: '30%'
+              }
+            ]
           },
           {
             id: 3,
@@ -35,8 +47,12 @@
             modelItem: 'Voglia di colori pastello',
             discountedPrice: '129,99 €',
             fullPrice: '184,99 €',
-            discountBadge: '-30%',
-            ecoBadge: false,
+            badges: [
+              {
+                type: 'discount',
+                value: '30%'
+              }
+            ]
           },
           {
             id: 4,
@@ -46,8 +62,16 @@
             modelItem: 'Tee unisex',
             discountedPrice: '14,99 €',
             fullPrice: '29,99 €',
-            discountBadge: '-50%',
-            ecoBadge: 'Sostenibilità',
+            badges: [
+              {
+                type: 'tag',
+                value: 'Sostenibilità'
+              },
+              {
+                type: 'discount',
+                value: '-50%'
+              }
+            ]
           },
           {
             id: 5,
@@ -56,9 +80,16 @@
             brand: "Maya Deluxe",
             modelItem: 'Stripe Bodice',
             discountedPrice: '99,99 €',
-            fullPrice: false,
-            discountBadge: false,
-            ecoBadge: false,
+            badges: [
+              {
+                type: 'tag',
+                value: 'Sostenibilità'
+              },
+              {
+                type: 'discount',
+                value: '-50%'
+              }
+            ]
           },
           {
             id: 6,
@@ -67,9 +98,12 @@
             brand: "Esprit",
             modelItem: 'Maglione - black',
             discountedPrice: '29,99 €',
-            fullPrice: false,
-            discountBadge: false,
-            ecoBadge: 'Sostenibilità',
+            badges: [
+              {
+                type: 'tag',
+                value: 'Sostenibilità'
+              }
+            ]
           }
         ] 
       }
