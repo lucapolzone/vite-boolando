@@ -17,7 +17,9 @@
     <div class="card">
       <div class="wrapper-photo">
         <!-- Box favorite item -->
-        <div class="favorite-item">
+        <div class="box-favorite-item">
+          <span class="favorite-item" v-show="card.isInFavorites == false"></span>
+          <span class="favorite-item selected" v-show="card.isInFavorites == true"></span>
         </div>
         
         <!-- Badges -->
@@ -61,7 +63,7 @@
         .wrapper-photo {
           position: relative;
 
-          .favorite-item {
+          .box-favorite-item {
             position: absolute;
             top: $small-size;
             right: 0;
@@ -74,7 +76,7 @@
             font-size: $medium-size;
           }
 
-          .favorite-item:hover {
+          .favorite-item.selected {
             color: deeppink;
           } 
 

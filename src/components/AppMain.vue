@@ -13,6 +13,7 @@
             name: 'Relaxed fit tee unisex',
             discountedPrice: '14,99 €',
             price: '29,99 €',
+            isInFavorites: true,
             badges: [
               {
                 type: 'tag',
@@ -32,6 +33,7 @@
             name: 'Roses tee',
             discountedPrice: '20,99 €',
             price: '29,99 €',
+            isInFavorites: true,
             badges: [
               {
                 type: 'discount',
@@ -47,6 +49,7 @@
             name: 'Voglia di colori pastello',
             discountedPrice: '129,99 €',
             price: '184,99 €',
+            isInFavorites: false,
             badges: [
               {
                 type: 'discount',
@@ -62,6 +65,7 @@
             name: 'Tee unisex',
             discountedPrice: '14,99 €',
             price: '29,99 €',
+            isInFavorites: false,
             badges: [
               {
                 type: 'tag',
@@ -80,6 +84,7 @@
             brand: "Maya Deluxe",
             name: 'Stripe Bodice',
             discountedPrice: '99,99 €',
+            isInFavorites: true,
             badges: []
           },
           {
@@ -89,6 +94,7 @@
             brand: "Esprit",
             name: 'Maglione - black',
             discountedPrice: '29,99 €',
+            isInFavorites: true,
             badges: [
               {
                 type: 'tag',
