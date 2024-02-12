@@ -21,9 +21,9 @@
         </div>
         
         <!-- Badges -->
-        <div v-for="badge in badges" class="badge-container d-flex">
-          <div class="discount badge" v-if="badge.type == 'tag' ? badge.value : ''">{{ badge.value }}</div>
-          <div class="eco badge" v-if="badge.type == 'discount' ? badge.value : ''">{{ badge.value }}</div>
+        <div v-for="badge in card.badges" class="badge-container d-flex">
+          <div class="discount badge" v-if="badge.type == 'discount' ? badge.value : ''">{{ badge.value }}</div>
+          <div class="eco badge" v-if="badge.type == 'tag' ? badge.value : ''">{{ badge.value }}</div>
         </div>
         
         <!-- Model photo -->
@@ -52,6 +52,8 @@
       width: calc(100% / 3);
 
     }
+
+
   
   .card {
         padding: $small-size;
@@ -79,8 +81,14 @@
 
           .badge-container {
             position: absolute;
+            left: $xlarge-size;
             bottom: $medium-size;
           }
+
+          .badge-container:last-of-type {
+            left: 0;
+          }
+
 
           .badge {
             background-color: rgb(221, 221, 221);
@@ -91,7 +99,6 @@
 
           .discount {
             background-color: red;
-            margin-right: $xsmall-size;
           }
 
           .eco {

@@ -80,16 +80,7 @@
             brand: "Maya Deluxe",
             modelItem: 'Stripe Bodice',
             discountedPrice: '99,99 €',
-            badges: [
-              {
-                type: 'tag',
-                value: 'Sostenibilità'
-              },
-              {
-                type: 'discount',
-                value: '-50%'
-              }
-            ]
+            badges: []
           },
           {
             id: 6,
