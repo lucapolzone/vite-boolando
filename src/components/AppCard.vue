@@ -8,16 +8,6 @@
 
     props: {
       cards: Array,
-      index: Number,
-      id: Number,
-      frontimage: String,
-      backimage: String,
-      brand: String,
-      model: String,
-      discountedprice: String,
-      fullprice: String,
-      discountbadge: String,
-      ecobadge: String
     }
   }
 
@@ -33,21 +23,21 @@
         
         <!-- Badges -->
         <div class="badge-container d-flex">
-          <div class="discount badge">{{ discountbadge }}</div>
-          <div class="eco badge">{{ ecobadge }}</div>
+          <div class="discount badge">{{ card.discountBadge }}</div>
+          <div class="eco badge">{{ card.ecoBadge }}</div>
         </div>
         
         <!-- Model photo -->
-        <img :src="`/img/${frontimage}`" :alt="`img-${id}`" class="default-image">
-        <img :src="`/img/${backimage}`" :alt="`img-${id}b`" class="total-frame-image">
+        <img :src="`/img/${card.frontImage}`" :alt="`img-${id}`" class="default-image">
+        <img :src="`/img/${card.backImage}`" :alt="`img-${id}b`" class="total-frame-image">
       </div>
 
       <!-- Caption -->
       <div class="wrapper-caption">
-        <small>{{ brand }}</small>
-        <h2>{{ model }}</h2>
-        <small class="discounted">{{ discountedprice }}</small>
-        <small class="full">{{ fullprice }}</small>
+        <small>{{ card.brand }}</small>
+        <h2>{{ card.modelItem.toUpperCase() }}</h2>
+        <small class="discounted">{{ card.discountedPrice }}</small>
+        <small class="full">{{ card.fullPrice }}</small>
       </div>
     </div>
   </div>

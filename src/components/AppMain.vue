@@ -4,7 +4,6 @@
   export default {
     data() {
       return {
-        index: 0,
         cards: [ 
           {
             id: 1,
@@ -21,33 +20,55 @@
             id: 2,
             frontImage: '2.webp',
             backImage: '2b.webp',
-            brand: "Levi's",
+            brand: 'Guess',
             modelItem: 'Relaxed fit tee unisex',
-            discountedPrice: '14,99 €',
+            discountedPrice: '20,99 €',
             fullPrice: '29,99 €',
             discountBadge: '-50%',
-            ecoBadge: 'Sostenibilità',
+            ecoBadge: false,
           },
           {
             id: 3,
             frontImage: '3.webp',
             backImage: '3b.webp',
-            brand: "Levi's",
-            modelItem: 'Relaxed fit tee unisex',
-            discountedPrice: '14,99 €',
-            fullPrice: '29,99 €',
-            discountBadge: '-50%',
-            ecoBadge: 'Sostenibilità',
+            brand: "Come Zucchero filato",
+            modelItem: 'Voglia di colori pastello',
+            discountedPrice: '129,99 €',
+            fullPrice: '184,99 €',
+            discountBadge: '-30%',
+            ecoBadge: false,
           },
           {
             id: 4,
             frontImage: '4.webp',
             backImage: '4b.webp',
             brand: "Levi's",
-            modelItem: 'Relaxed fit tee unisex',
+            modelItem: 'Tee unisex',
             discountedPrice: '14,99 €',
             fullPrice: '29,99 €',
             discountBadge: '-50%',
+            ecoBadge: 'Sostenibilità',
+          },
+          {
+            id: 5,
+            frontImage: '5.webp',
+            backImage: '5b.webp',
+            brand: "Maya Deluxe",
+            modelItem: 'Stripe Bodice',
+            discountedPrice: '99,99 €',
+            fullPrice: false,
+            discountBadge: false,
+            ecoBadge: false,
+          },
+          {
+            id: 6,
+            frontImage: '6.webp',
+            backImage: '6b.webp',
+            brand: "Esprit",
+            modelItem: 'Maglione - black',
+            discountedPrice: '29,99 €',
+            fullPrice: false,
+            discountBadge: false,
             ecoBadge: 'Sostenibilità',
           }
         ] 
@@ -67,16 +88,6 @@
           <!-- Componente AppCard -->
           <app-card
             :cards= "cards"
-            :index="index"
-            :id="cards[index].id" 
-            :frontimage="cards[index].frontImage"
-            :backimage="cards[index].backImage" 
-            :brand="cards[index].brand"
-            :model="cards[index].modelItem"
-            :discountedprice="cards[index].discountedPrice"
-            :fullprice="cards[index].fullPrice"
-            :discountbadge="cards[index].discountBadge"
-            :ecobadge="cards[index].ecoBadge"
           >
           </app-card>
 
