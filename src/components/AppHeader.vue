@@ -1,7 +1,10 @@
 <script>
-  export default {
+import { store } from '../store'
+
+export default {
     data() {
       return {
+        store,
         links: [
           {
             text: 'Donna',
@@ -58,6 +61,7 @@
       <h1>
         <a href="">
          <img src="/img/boolean-logo.png" alt="logo boolando" class="logo">
+         <h2> {{ store.test }} </h2> <!-- test global state -->
         </a>
       </h1>
 
