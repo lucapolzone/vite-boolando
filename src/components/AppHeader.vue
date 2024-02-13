@@ -90,5 +90,9 @@ header {
   .logo {
     height: 30px;
   }
+
+  .list-icons li:last-child {
+    margin-right: 0;
+  }
 }
 </style>

@@ -85,7 +85,6 @@
             name: 'Stripe Bodice',
             discountedPrice: '99,99 €',
             isInFavorites: true,
-            badges: []
           },
           {
             id: 6,
