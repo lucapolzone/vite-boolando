@@ -164,12 +164,13 @@ https://www.npmjs.com/package/json-server <br>
 https://www.npmjs.com/package/axios
 
 ## GLOBAL STATE
-Realizzare un file "store" come visto in classe / come descritto dalla DOC di Vue
+Realizzare un file "store" come visto in classe / come descritto dalla DOC di Vue. <br>
 Usarlo per conservare ed utilizzare l'endpoint base (`localhost:3000`)
 
 ## BONUS
 Aggiungere al global state (store) anche la lista di prodotti recuperata dal JSON Server ed utilizzarla durante la stampa
-
+ 
+<br>
 
 # (13/02/2024)
 stessa nome repo
