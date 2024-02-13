@@ -1,23 +1,24 @@
 <script>
-  import { apiUri } from './store';
+  import { store } from './store';
   import axios from 'axios';
 
   import AppHeader from './components/AppHeader.vue';
   import AppMain from './components/AppMain.vue';
   import AppFooter from './components/AppFooter.vue';
+  import AppModal from './components/AppModal.vue';
 
   export default {
     data() {
       return {
-        apiUri,
+        store,
         cards: [], 
       }
     },
 
-    components: {AppHeader, AppMain, AppFooter},
+    components: {AppHeader, AppMain, AppFooter, AppModal},
     
     created() {
-      axios.get(this.apiUri.uri).then((res) => {
+      axios.get(this.store.uri).then((res) => {
         this.cards = res.data;
       });
     }
@@ -26,9 +27,10 @@
 
 <template>
 
-  <app-header></app-header>
-  <app-main :cards="cards"></app-main>
-  <app-footer></app-footer>
+  <app-header />
+  <app-modal />
+  <app-main :cards="cards" />
+  <app-footer />
 
 
 </template>
