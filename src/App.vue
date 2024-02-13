@@ -25,7 +25,7 @@
 <template>
 
   <app-header></app-header>
-  <app-main></app-main>
+  <app-main :cards="cards"></app-main>
   <app-footer></app-footer>
 
 
