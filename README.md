@@ -159,7 +159,7 @@ stessa nome repo
 4. Testate il server e recuperate l'indirizzo che vi restituisce la lista dei prodotti
 5. Chiamatelo via axios e stampare in pagina i prodotti presi dalla API
 
-Di seguito i link per l'installazione dei pacchetti necessari
+Di seguito i link per l'installazione dei pacchetti necessari <br>
 https://www.npmjs.com/package/json-server <br>
 https://www.npmjs.com/package/axios
 
