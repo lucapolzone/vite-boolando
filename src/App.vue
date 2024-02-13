@@ -1,4 +1,6 @@
 <script>
+  import axios from 'axios';
+
   import AppHeader from './components/AppHeader.vue';
   import AppMain from './components/AppMain.vue';
   import AppFooter from './components/AppFooter.vue';
@@ -6,10 +8,17 @@
   export default {
     data() {
       return {
+        cards: [], 
       }
     },
 
-    components: {AppHeader, AppMain, AppFooter}
+    components: {AppHeader, AppMain, AppFooter},
+    
+    created() {
+      axios.get('http://localhost:3000/cards').then((res) => {
+        this.cards = res.data;
+      });
+    }
   }
 </script>
 
