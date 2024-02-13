@@ -1,6 +1,7 @@
 <script>
 import AppCard from './AppCard.vue';
 
+
 export default {
   data() {
     return {
@@ -8,7 +9,6 @@ export default {
   },
   props: { cards: Array },
   components: { AppCard },
-
 
 };
 </script>

@@ -1,4 +1,5 @@
 <script>
+  import { apiUri } from './store';
   import axios from 'axios';
 
   import AppHeader from './components/AppHeader.vue';
@@ -8,6 +9,7 @@
   export default {
     data() {
       return {
+        apiUri,
         cards: [], 
       }
     },
@@ -15,7 +17,7 @@
     components: {AppHeader, AppMain, AppFooter},
     
     created() {
-      axios.get('http://localhost:3000/cards').then((res) => {
+      axios.get(this.apiUri.uri).then((res) => {
         this.cards = res.data;
       });
     }

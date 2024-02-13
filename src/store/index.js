@@ -1,5 +1,5 @@
 import { reactive } from 'vue'
 
-export const store = reactive({
-  test: 'Questo è globale' 
+export const apiUri = reactive({
+  uri: 'http://localhost:3000/cards' 
 })
