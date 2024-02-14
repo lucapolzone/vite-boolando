@@ -1,15 +1,24 @@
 <script>
 import AppCard from './AppCard.vue';
-
+import { store } from '../store';
 
 export default {
-  data() {
-    return {
-    }
+  props: { 
+    cards: Array,
   },
-  props: { cards: Array },
   components: { AppCard },
-
+  methods: {
+    //funzione che apre la modal cliccando la card 
+    handleCardOpen(cardIndex) {
+      const selectedProduct = this.cards[cardIndex];
+      store.modal.frontImg = selectedProduct.frontImage;
+      store.modal.fashionBrand = selectedProduct.brand;
+      store.modal.modelArticle = selectedProduct.name;
+      store.modal.discountedPr = selectedProduct.discountedPrice;
+      store.modal.totalPr = selectedProduct.price;
+      store.modal.show = true;
+    }
+  }
 };
 </script>
 
@@ -19,10 +28,10 @@ export default {
       <div class="row d-flex">
 
         <!-- Componente AppCard -->
-        <app-card :cards="cards">
-        </app-card>
-
-
+        <app-card 
+        :cards="cards"
+        @card-open="handleCardOpen"
+        />
 
       </div>
     </div>

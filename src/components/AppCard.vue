@@ -1,20 +1,19 @@
 <script>
- export default {
-    data() {
-      return {
-      }
-    },
 
+  export default {
+   
     props: {
       cards: Array,
-    }
+    },
+
+    emits: ['card-open']
   }
 
 </script>
 <template>
 
-  <div v-for="card in cards" class="col">
-    <div class="card">
+  <div v-for="card in cards" class="col" >
+    <div class="card" @click="$emit('card-open', (card.id - 1))">
       <div class="wrapper-photo">
         <!-- Box favorite item -->
         <div class="box-favorite-item">

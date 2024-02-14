@@ -11,7 +11,7 @@
     data() {
       return {
         store,
-        cards: [], 
+        cards: [],
       }
     },
 
@@ -27,9 +27,9 @@
 
 <template>
 
+  <app-modal v-if="store.modal.show"/>
   <app-header />
-  <app-modal />
-  <app-main :cards="cards" />
+  <app-main :cards="cards"/>
   <app-footer />
 
 
